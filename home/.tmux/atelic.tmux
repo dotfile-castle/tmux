@@ -48,16 +48,16 @@ set -g clock-mode-colour blue
 
 
 # some key-binding changes
-bind x kill-pane
-bind X next-layout
-bind Z previous-layout
+#bind x kill-pane
+#bind X next-layout
+#bind Z previous-layout
 
 #urxvt tab like window switching (-n: no prior escape seq)
-bind -n S-down new-window
-bind -n S-left prev
-bind -n S-right next
-bind -n C-left swap-window -t -1
-bind -n C-right swap-window -t +1
+#bind -n S-down new-window
+#bind -n S-left prev
+#bind -n S-right next
+#bind -n C-left swap-window -t -1
+#bind -n C-right swap-window -t +1
 
 set -g default-terminal "screen-256color"
 
