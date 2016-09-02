@@ -160,16 +160,16 @@ set -g clock-mode-colour blue
 
 
 # some key-binding changes
-bind x kill-pane
-bind X next-layout
-bind Z previous-layout
+#bind x kill-pane
+#bind X next-layout
+#bind Z previous-layout
 
 #urxvt tab like window switching (-n: no prior escape seq)
-bind -n S-down new-window
-bind -n S-left prev
-bind -n S-right next
-bind -n C-left swap-window -t -1
-bind -n C-right swap-window -t +1
+#bind -n S-down new-window
+#bind -n S-left prev
+#bind -n S-right next
+#bind -n C-left swap-window -t -1
+#bind -n C-right swap-window -t +1
 
 set -g default-terminal "screen-256color"
 
@@ -195,8 +195,8 @@ set -g status-position bottom
 set -g status-bg colour234
 set -g status-fg colour137
 set -g status-attr dim
-set -g status-left ''
-set -g status-right '#[fg=colour233,bg=colour241,bold] %d/%m #[fg=colour233,bg=colour245,bold] %H:%M:%S '
+set -g status-left ' #[fg=colour245,bold]#S '
+set -g status-right '#[fg=colour233,bg=colour241,bold] %Y-%m-%d #[fg=colour233,bg=colour245,bold] %H:%M:%S '
 set -g status-right-length 50
 set -g status-left-length 20
 
